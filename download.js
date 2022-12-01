@@ -25,6 +25,8 @@ if (isNaN(year)) {
 const res = await fetch(`https://adventofcode.com/${year}/day/${day}/input`, {
   headers: {
     cookie: `session=${process.env.SESSION_COOKIE}`,
+    "User-Agent":
+      "https://github.com/maggie-j-liu/advent-of-code-2022/blob/main/download.js",
   },
 }).then((res) => res.text());
 const dir = `${day}`.padStart(2, "0");

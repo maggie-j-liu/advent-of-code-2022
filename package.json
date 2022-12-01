@@ -1,0 +1,19 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "download": "node download.js",
+    "set-up": "node setup.js",
+    "aoc": "pnpm download && pnpm set-up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.0"
+  }
+}
